@@ -118,7 +118,7 @@ inquirer
       inputTest,
       inputRepo,
     }) => {
-      const template = `#${inputProjectName}
+      const template = `# ${inputProjectName}
 
 <a name="liscense"></a>[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})
 
@@ -128,19 +128,19 @@ inquirer
 * [Description](#description)
 * [Installation](#install)
 * [Contributing](#contributing)
-* [Test]](#test)
+* [Test](#test)
 * [Questions](#questions)
 
 
 
-# Description(#description)
+# Description <a href="description"></a>
 ${inputDesc}
 
-# Installation(#installation)
+# Installation<a href="installation"></a>
 ${inputDepend}
 
   
-# Contributing(#contributing)
+# Contributing<a href="contributing"></a>
 ${inputRepo}
 
 ## Test(#test)
