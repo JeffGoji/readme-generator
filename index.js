@@ -58,7 +58,7 @@ inquirer
       type: "list",
       message: "What kind of license should your project have?",
       name: "inputLicense",
-      choices: ["MIT", "APACHE 2.0", "BSD 3", "GPL 3.0", "None"],
+      choices: ["MIT", "APACHE2.0", "BSD3", "GPL3.0", "None"],
 
       validate: (value) => {
         if (value) {
@@ -119,7 +119,8 @@ inquirer
       inputRepo,
     }) => {
       const template = `#${inputProjectName}
-      # Liscense:<a name="liscense"></a> ${inputLicense}
+
+<a name="liscense"></a>[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})
 
 ## Table of contents <a name="table"></a>
 * [Table of Contents](#table)
@@ -157,7 +158,7 @@ You can find more of my work at [${inputUserName}](https://github.com/${inputUse
   );
 
 function createNewFile(data) {
-  fs.writeFile("README.md", data, (err) => {
+  fs.writeFile("./readme_files/README.md", data, (err) => {
     if (err) {
       console.log(err);
     }
