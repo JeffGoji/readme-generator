@@ -9,7 +9,7 @@ inquirer
     {
       type: "input",
       message: "What is your GitHub Username?",
-      name: "InputUserName",
+      name: "inputUserName",
       validate: (value) => {
         if (value) {
           return true;
@@ -82,7 +82,7 @@ inquirer
     },
     {
       type: "input",
-      message: "What command should be run to run the program?",
+      message: "What command should be run to test the program?",
       name: "inputTest",
       validate: (value) => {
         if (value) {
@@ -133,21 +133,21 @@ inquirer
 
 
 
-# Description <a href="description"></a>
+## Description <a href="description"></a>
 ${inputDesc}
 
-# Installation<a href="installation"></a>
+## Installation<a href="installation"></a>
 ${inputDepend}
 
-# Test<a href="test"></a>
+## Test<a href="test"></a>
 ${inputTest}
   
-# Contributing<a href="contributing"></a>
+## Contributing<a href="contributing"></a>
 ${inputRepo}
 
 ## Questions <a name="questions"></a>
 If you have any questions about the repo, open an issue or contact me directly at ${inputEmail}.
-You can find more of my work at [${inputUserName}](https://github.com/${inputUserName})
+You can find more of my work at [https://github.com/${inputUserName}](https://github.com/${inputUserName})
 
 [Back to top](#top)
 
