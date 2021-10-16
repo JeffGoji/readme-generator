@@ -82,7 +82,7 @@ inquirer
     },
     {
       type: "input",
-      message: "What command should be run to run test?",
+      message: "What command should be run to run the program?",
       name: "inputTest",
       validate: (value) => {
         if (value) {
@@ -139,12 +139,11 @@ ${inputDesc}
 # Installation<a href="installation"></a>
 ${inputDepend}
 
+# Test<a href="test"></a>
+${inputTest}
   
 # Contributing<a href="contributing"></a>
 ${inputRepo}
-
-## Test(#test)
-${inputTest}
 
 ## Questions <a name="questions"></a>
 If you have any questions about the repo, open an issue or contact me directly at ${inputEmail}.
