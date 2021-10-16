@@ -2,7 +2,7 @@
 //const for require:
 const fs = require("fs");
 
-//Inquirer questions to generate the readme file:
+// Inquirer questions to generate the readme file:
 let inquirer = require("inquirer");
 inquirer
   .prompt([
@@ -106,7 +106,7 @@ inquirer
       },
     },
   ])
-
+  // Create the template:
   .then(
     ({
       inputUserName,
@@ -157,6 +157,7 @@ You can find more of my work at [${inputUserName}](https://github.com/${inputUse
     }
   );
 
+// Write the template to a README.md file:
 function createNewFile(data) {
   fs.writeFile("./readme_files/README.md", data, (err) => {
     if (err) {
