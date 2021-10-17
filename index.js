@@ -120,11 +120,11 @@ inquirer
     }) => {
       const template = `# ${inputProjectName}
 
-[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})<a name="liscense"></a>
+[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})<a name="license"></a>
 
 ## Table of contents <a name="table"></a>
 * [Table of Contents](#table)
-* [Liscense](#liscense)
+* [License](#license)
 * [Description](#description)
 * [Installation](#install)
 * [Contributing](#contributing)
