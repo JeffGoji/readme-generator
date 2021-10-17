@@ -26,7 +26,7 @@ inquirer
         if (value) {
           return true;
         } else {
-          return "I need a value";
+          return "I need a value, type N/A if you do not wish to enter an email";
         }
       },
     },
@@ -120,7 +120,7 @@ inquirer
     }) => {
       const template = `# ${inputProjectName}
 
-<a name="liscense"></a>[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})
+[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})<a name="liscense"></a>
 
 ## Table of contents <a name="table"></a>
 * [Table of Contents](#table)
@@ -139,11 +139,13 @@ ${inputDesc}
 ## Installation<a href="installation"></a>
 ${inputDepend}
 
+## Contributing<a href="contributing"></a>
+${inputRepo}
+
 ## Test<a href="test"></a>
 ${inputTest}
   
-## Contributing<a href="contributing"></a>
-${inputRepo}
+
 
 ## Questions <a name="questions"></a>
 If you have any questions about the repo, open an issue or contact me directly at ${inputEmail}.
