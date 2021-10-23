@@ -17,11 +17,13 @@
 This is a professional nodeJS README generator that uses the command line and a series of prompts to build a README.MD file for your GitHub page.
 The README.md file the program generates will be placed in the "readme_files" folder.
 You can download the code at this repository: https://github.com/JeffGoji/readme-generator.
-See demo/instruction video here: [https://watch.screencastify.com/v/JL2KfqM4KTbk6OhIhOU9](https://watch.screencastify.com/v/JL2KfqM4KTbk6OhIhOU9)
+See demo/instruction video here: [https://youtu.be/oCDSMqKEUY4](https://youtu.be/oCDSMqKEUY4)
 
 You will need to run “npm install” in the command line to install your dependencies. You will need to Install the [inquirer npm](https://www.npmjs.com/package/inquirer) to make the application work on your computer, you can do so by typing “npm install inquirer” in your command line.
 
 A fun little note, this README file was created with this program.
+
+
 
 ## Installation<a href="installation"></a>
 
