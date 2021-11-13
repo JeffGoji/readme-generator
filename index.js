@@ -120,34 +120,34 @@ inquirer
     }) => {
       const template = `# ${inputProjectName}
 
-[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})<a name="license"></a>
+[![License:${inputLicense}](https://img.shields.io/badge/License-${inputLicense}-yellow.svg)](https://opensource.org/licenses/${inputLicense})
 
-## Table of contents <a name="table"></a>
-* [Table of Contents](#table)
-* [License](#license)
-* [Description](#description)
-* [Installation](#install)
-* [Contributing](#contributing)
-* [Test](#test)
-* [Questions](#questions)
+## Table of contents
+* [Table of Contents]
+* [License](#License)
+* [Description](#Description)
+* [Installation](#Installation)
+* [Contributing](#Contributing)
+* [Test](#Test)
+* [Questions](#Questions)
 
 
 
-## Description <a href="description"></a>
+## Description
 ${inputDesc}
 
-## Installation<a href="installation"></a>
+## Installation
 ${inputDepend}
 
-## Contributing<a href="contributing"></a>
+## Contributing
 ${inputRepo}
 
-## Test<a href="test"></a>
+## Test
 ${inputTest}
   
 
 
-## Questions <a name="questions"></a>
+## Questions
 If you have any questions about the repo, open an issue or contact me directly at ${inputEmail}.
 You can find more of my work at [https://github.com/${inputUserName}](https://github.com/${inputUserName})
 
@@ -160,7 +160,7 @@ You can find more of my work at [https://github.com/${inputUserName}](https://gi
 
 // Write the template to a README.md file:
 function createNewFile(data) {
-  fs.writeFile("./readme_files/README.md", data, (err) => {
+  fs.writeFile("./output/README.md", data, (err) => {
     if (err) {
       console.log(err);
     }
